@@ -44,13 +44,8 @@ The subject line of the email should include the phrase “OPT-IN PAPER.” This
 
 Following publication of the database, which we see as a public resource available through EDI and NCEAS, we hope numerous scientific questions can be addressed with this database and encourage the broader community to use this as a resource moving forward. Studies that use multi-site data from the EMERGENT database are really leveraging the synthesis activities of the working group. Towards this end, we’re suggesting an opt-in approach where for the first two years following publication of the database paper.
 
-### Who should opt in?
 
-Authorship must be earned through a substantial contribution. Traditionally, project initiation and framing, data analysis and interpretation, and manuscript preparation are all authorship-worthy contributions, and remain so for manuscripts using our database. However, synthesis collaborators have also agreed that collaborators who lead a site from which data are being used in a paper can also opt-in as co-authors, under the following conditions: (1) the collaborators’ contributed to the generation of L2 data that form the basis for the database and are used in the paper’s analysis; and (2) that this collaborator makes additional contributions to the particular manuscript, including data analysis, writing, or editing.
-
-Manuscripts published using this synthesis will be accompanied by a supplemental table indicating authorship contributions. You can create and share a standard authorship table using google docs and the criteria listed above. For opt-in papers, a co-author is expected to have at least two of the following areas checked in the rubric below.
-
-#### Who should opt in?  
+### Who should opt in?  
 Authorship must be earned through a _substantial contribution._ Traditionally, project initiation and framing, data analysis and interpretation, and manuscript preparation are all authorship-worthy contributions, and remain so for manuscripts using our database. However, synthesis collaborators have also agreed that collaborators who lead a site from which data are being used in a paper can also opt-in as co-authors, under the following conditions: (1) the collaborators’ contributed to the generation of L2 data that form the basis for the database and are used in the paper’s analysis; and (2) that this collaborator makes additional contributions to the particular manuscript, including data analysis, writing, or editing.    
 
 Manuscripts published using this synthesis will be accompanied by a supplemental table indicating authorship contributions. You can create and share a standard authorship table using google docs and the cirteral listed  above. For opt-in papers, a co-author is expected to have **at least two** of the following areas checked in the rubric below.  

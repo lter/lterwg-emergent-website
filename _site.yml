@@ -1,0 +1,8 @@
+name: "my-website"
+navbar:
+  title: "Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT)"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Authors"
+      href: docs/authorship.html

@@ -1,8 +1,14 @@
-name: "my-website"
+name: "EMERGENT"
 navbar:
   title: "Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT)"
   left:
     - text: "Home"
+      icon: fa-home
       href: index.html
     - text: "Authors"
+      icon: fa-pen
       href: docs/authorship.html
+      
+output:
+  html_document:
+    theme: flatly

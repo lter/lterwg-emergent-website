@@ -21,7 +21,7 @@ Our climate crisis, resulting from changes in interacting climate variables (tem
 
 ### Principal Investigators
 
-Jeff Blanchard, Janet Jansson, Jason McDermott, Margaret O'Brien, Jorge Rodriguez and Lee Stanish.  
+Jeff Blanchard, UMass Amherst/HFR, Janet Jansson, Pacific Northwest National Laboratory, Jorge Rodrigues, UC Davis, Lee Stanish, NEON, Margaret O’Brien, UC Santa Barbara, Jason McDermott, Pacific Northwest National Laboratory
 <br>
 
 ### Participants & Collaborators
@@ -30,3 +30,4 @@ Steven Allison, Emiley Eloe-Fadrosh, Sarah Evans, Dawson Fairbanks, Rachel Galle
 <br>
 
 Award Date: January 9, 2020
+Proposed End Date: March 31, 2022

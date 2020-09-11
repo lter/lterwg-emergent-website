@@ -5,9 +5,9 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: _site/index.html
-    - text: "Authors"
+    - text: "Authorship"
       icon: fa-pen
-      href: docs/authorship.html
+      href: _site/docs/authorship.html
       
 output:
   html_document:

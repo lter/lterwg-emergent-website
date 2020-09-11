@@ -4,11 +4,13 @@ navbar:
   left:
     - text: "Home"
       icon: fa-home
-      href: index.html
-    - text: "Authors"
+      href: _site/index.html
+    - text: "Authorship"
       icon: fa-pen
-      href: docs/authorship.html
+      href: _site/docs/authorship.html
       
 output:
   html_document:
+    includes:
+      after_body: _site/docs/footer.html
     theme: flatly

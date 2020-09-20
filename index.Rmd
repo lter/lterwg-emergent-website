@@ -1,3 +1,9 @@
+# EMERGENT Synthesis working group website
+
+Rmarkdown code and serves the static website for the LTER EMERGENT synthesis working group.
+
+Main repo: https://github.com/lter/lterwg-emergent
+
 ---
 title: "Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT)"
 ---
@@ -10,7 +16,7 @@ This is the project web site for Ecological Metagenome-derived Reference Genomes
      alt="Markdown Monster icon"
      style="float:right;position: relative;width:400px;height:400px;" />
 <figcaption><div style="display:block; float:left;margin-left:530px; margin-right:35px;position:relative"> The Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT) synthesis project connects genomic information about the soil microbiome with the broader ecological context.
-Credit: Image credit: Andrea Dame and Eva Tipps
+Image credit: Andrea Dame and Eva Tipps
 </div>
 </figcaption>
 </figure>   
@@ -21,12 +27,12 @@ Our climate crisis, resulting from changes in interacting climate variables (tem
 
 ### Principal Investigators
 
-*[Jeff Blanchard](http://www.bio.umass.edu/micro/blanchard/), UMass Amherst/HFR, 
-*[Janet Jansson](https://www.pnnl.gov/people/janet-jansson), Pacific Northwest National Laboratory, 
-*[Jorge Rodrigues](http://lawr.ucdavis.edu/people/faculty/rodrigues-jorge), UC Davis,
-*[Lee Stanish](https://www.neonscience.org/observatory/staff/lee-stanish), NEON, 
-*[Margaret O’Brien](https://msi.ucsb.edu/people/research-scientists/margaret-obrien), UC Santa Barbara,
-*[Jason McDermott](https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=7039), Pacific Northwest National Laboratory
+* [Jeff Blanchard](http://www.bio.umass.edu/micro/blanchard/), UMass Amherst/HFR
+* [Janet Jansson](https://www.pnnl.gov/people/janet-jansson), Pacific Northwest National Laboratory
+* [Jorge Rodrigues](http://lawr.ucdavis.edu/people/faculty/rodrigues-jorge), UC Davis
+* [Lee Stanish](https://www.neonscience.org/observatory/staff/lee-stanish), NEON
+* [Margaret O’Brien](https://msi.ucsb.edu/people/research-scientists/margaret-obrien), UC Santa Barbara
+* [Jason McDermott](https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=7039), Pacific Northwest National Laboratory
 <br>
 
 ### Participants & Collaborators

@@ -2,11 +2,10 @@ name: "EMERGENT"
 navbar:
   title: "Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT)"
   left:
-    - text: "Home"
+    - text: " Home"
       icon: fa-home
       href: _site/index.html
-    - text: "Authorship"
-      icon: fa-pen
+    - text: " Authorship"
       href: _site/docs/authorship.html
       
 output:

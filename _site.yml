@@ -4,7 +4,7 @@ navbar:
   left:
     - text: " Home"
       icon: fa-home
-      href: _site/index.html
+      href: index.html
     - text: " Authorship"
       href: _site/docs/authorship.html
       

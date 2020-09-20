@@ -6,10 +6,10 @@ navbar:
       icon: fa-home
       href: index.html
     - text: " Authorship"
-      href: _site/docs/authorship.html
+      href: authorship.html
       
 output:
   html_document:
     includes:
-      after_body: _site/docs/footer.html
+      after_body: 
     theme: flatly

@@ -1,414 +1,510 @@
-<!DOCTYPE html>
+<html><head>
 
-<html>
-
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
-<title>Authorship</title>
-
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+  
+  
+  
+  
+  <title>Authorship</title>
+  
+  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet">
+  <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+  <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+  <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+  <script src="site_libs/navigation-1.1/tabsets.js"></script>
+  <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet">
+  <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet">
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet">
+  
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+    pre:not([class]) {
+      background-color: white;
+    }
+  </style>
+  <script type="text/javascript">
+  if (window.hljs) {
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+    if (document.readyState && document.readyState === "complete") {
+      window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+    }
   }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  </script>
+  
+  
+  
+  <style type="text/css">
+  h1 {
+    font-size: 34px;
   }
-}
-</script>
-
-
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">EMERGENT</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-     Home
-  </a>
-</li>
-<li>
-  <a href="authorship.html"> Authorship</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
-
-
-
-<h1 class="title toc-ignore">Authorship</h1>
-
-</div>
-
-
-<p>This document is an adaptation of the <a href="https://lter.github.io/som-website/authorship.html">SOM Harmonization working group</a> and <a href="http://www.nutnet.umn.edu/authorship">NutNet</a> policies.</p>
-<div id="data-are-public-and-harmonizing-them-into-something-meaningful-is-hard" class="section level2">
-<h2>Data are public, and harmonizing them into something meaningful is hard</h2>
-<p>Metagenomic data collected as part of NSF funded networks and observatories (e.g. LTER, CZO, and NEON) are intended to be publically available. Much of this legacy data, however, has been collected and archived in ways that preclude meaningful cross site synthesis without further processing. The major objective of this working group, is to collate and harmonize these datasets in a scripted, tractable manner. Many of the raw datasets collected for the database have already been published and archived in GenBank, IMG or other data repositories. In some cases, data from unpublished sources have been included in the database (with permission of the data generators). For both published and unpublished data, personal knowledge about the individual sites and experiments are critical for accurately understanding the data products and linking across datasets. The willingness of many scientists to cooperate and collaborate is what makes this synthesis possible. We have attempted to lay out ground rules to establish a fair process for establishing authorship, and to be inclusive while not diluting the value of authorship on a manuscript.</p>
-<p>Our primary goals in the authorship process are to consistently, accurately and transparently attribute the contribution of each author on the paper, to encourage participation in manuscripts by interested scientists, and to ensure that each author has made sufficient contribution to the paper to warrant authorship. Towards this end we have developed authorship guidelines for both the initial database paper and subsequent scientific papers that use the database. Please note, physical attendance at any of our meeting is not a requirement.</p>
-<p>Papers using the EMERGENT database and other resources with put together to address scientific questions should follow the authorship policy. Separate authorship for the methods and database documentation paper are described below.</p>
-</div>
-<div id="authorship-process-overview" class="section level2">
-<h2>Authorship process: Overview</h2>
-<p><strong>1. Read these authorship policies and guidelines. </strong></p>
-<p><strong>2. Consult the Emergent web site on for current proposals and active manuscripts,</strong> and contact the listed lead author on any similar proposal to minimize overlap, or to join forces.</p>
-<p><strong>3. Prepare a manuscript proposal</strong>, and email Jeff Blanchard (jeffb [at] bio.umass.edu). Your proposal will list the lead author(s), the title and abstract body, and the specific data types or fields from the database that you wish to use. You can also specify more detail about response and predictor variables (if appropriate), and indicate a timeline for analysis and writing. Proposed ideas are reviewed by the authorship committee (Stanish, O’Brien, Rodriques, Jansson, McDermott, Blanchard) to ensure there is sufficient distinction from proposed and ongoing papers. The authorship committee may suggest altering or combining analyses and papers to resolve issues of overlap. Following approval, the abstract will be posted to the projects tab of the website to communicate with the larger working group.</p>
-<p><strong>4. Circulate your draft analysis and manuscript to solicit Opt-In authorship.</strong> The lead author should circulate the manuscript to the working group by attaching it as an email to the synthesis listserv (emergent [at] lternet.edu). The subject line of the email should include the phrase “OPT-IN PAPER.” This email should also include a deadline by which time co-authors should respond. The right point to share your working draft and solicit co-authors is different for each manuscript, but in general: * Sharing early drafts or figures allows for more effective co-author contribution. While ideally this would mean circulating the manuscript at a very early stage for opt-in to the entire network, it is acceptable and even typical to share early drafts or figures among a smaller group of ‘core authors.’ * Circulating essentially complete manuscripts does not allow the opportunity for meaningful contribution from co-authors, and is discouraged.</p>
-<p><strong>5. Potential co-authors should signal their intention to opt-in </strong> by responding by email to the lead author before the stated deadline.</p>
-<p><strong>6. Lead authors should keep an email list of co-authors and communicate regularly </strong> about progress including sharing drafts of analyses, figures, and text as often as is productive and practical.</p>
-<p><strong>7. Lead authors should circulate complete drafts </strong> among co-authors and consider comments and changes. Given the wide variety of ideas and suggestions provided on each paper, co-authors should recognize the final decisions belong to the lead author.</p>
-<p><strong>8. Final manuscripts should be reviewed and approved by each co-author before submission.</strong></p>
-<p><strong>9. All authors and co-authors should fill out their contribution in the <a href="#rubric_anchor">authorship rubric</a> </strong> and attach it as supplementary material to manuscripts using the database. Lead authors are responsible for ensuring consistency in credit given for contributions, and may alter co-author’s entries in the table to do so. An easy way to manage the author table is with an online google sheet.</p>
-<p><strong>10. The lead author should carefully review the authorship contribution table </strong> to ensure that all authors have contributed at a level that warrants authorship and that contributions are consistently attributed among authors. Has each author made contributions in at least two areas in the authorship rubric? Did each author provide thoughtful, detailed feedback on the manuscript? Authors are encouraged to contact the workshop coordinators (Stanish, O’Brien, Rodriques, Jansson, McDermott, Blanchard) about any confusion or conflicts.</p>
-</div>
-<div id="authorship-for-papers-using-the-database" class="section level2">
-<h2>Authorship for papers using the database</h2>
-<p>Following publication of the database, which we see as a public resource available through EDI and NCEAS, we hope numerous scientific questions can be addressed with this database and encourage the broader community to use this as a resource moving forward. Studies that use multi-site data from the EMERGENT database are really leveraging the synthesis activities of the working group. Towards this end, we’re suggesting an opt-in approach where for the first two years following publication of the database paper.</p>
-<div id="who-should-opt-in" class="section level3">
-<h3>Who should opt in?</h3>
-<p>Authorship must be earned through a <em>substantial contribution.</em> Traditionally, project initiation and framing, data analysis and interpretation, and manuscript preparation are all authorship-worthy contributions, and remain so for manuscripts using our database. However, synthesis collaborators have also agreed that collaborators who lead a site from which data are being used in a paper can also opt-in as co-authors, under the following conditions: (1) the collaborators’ contributed to the generation of L2 data that form the basis for the database and are used in the paper’s analysis; and (2) that this collaborator makes additional contributions to the particular manuscript, including data analysis, writing, or editing.</p>
-<p>Manuscripts published using this synthesis will be accompanied by a supplemental table indicating authorship contributions. You can create and share a standard authorship table using google docs and the cirteral listed above. For opt-in papers, a co-author is expected to have <strong>at least two</strong> of the following areas checked in the rubric below.</p>
-</div>
-<div id="rubric_anchor" class="section level3">
-<h3>Authorship rubric, for papers using the database</h3>
-<ul>
-<li>Developed and framed the research question.<br />
-</li>
-<li>Analyzed data or contributed to data analyses.<br />
-</li>
-<li>Conducted model simulation or contributed to model simulations.<br />
-</li>
-<li>Helped to harmonize and aggregate the raw data to cross-site dataset (Level 1 data).<br />
-</li>
-<li>Developed and contributed tools to synthesize and analyze the aggregated (Level 2 data).<br />
-</li>
-<li>Wrote the majority of at least one of the sections of the paper.<br />
-</li>
-<li>Contributed to writing the paper by providing suggestions, text, citations, copy editing.</li>
-</ul>
-</div>
-<div id="database_anchor" class="section level3">
-<h3>Authorship rubric for the database paper</h3>
-<p>Invitations for authorship on the ‘database paper’ that documents the process and product of these efforts, will be extended to anyone who can complete two of the following criteria:</p>
-<ul>
-<li>Contributed raw data (Level 0 data).<br />
-</li>
-<li>Helped to harmonize and aggregate the raw data to cross-site dataset (Level 1 data).<br />
-</li>
-<li>Developed and contributed tools to synthesize and analyze the aggregated (Level 2 data).<br />
-</li>
-<li>Wrote the majority of at least one of the sections of the paper.<br />
-</li>
-<li>Contributed to writing the paper by providing suggestions, text, citations, copy editing.<br />
-</li>
-<li>Site coordinator, responsible for coordinated data collection, QA-QC, and submission of data products used in the database.</li>
-</ul>
-</div>
-</div>
-
-
-
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+  h1.title {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+  .table th:not([align]) {
+    text-align: left;
+  }
+  </style>
+  
+  
+  
+  
+  <style type="text/css">
+  .main-container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  code {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  img {
+    max-width:100%;
+  }
+  .tabbed-pane {
+    padding-top: 12px;
+  }
+  .html-widget {
+    margin-bottom: 20px;
+  }
+  button.code-folding-btn:focus {
+    outline: none;
+  }
+  summary {
+    display: list-item;
+  }
+  </style>
+  
+  
+  <style type="text/css">
+  /* padding for bootstrap navbar */
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  /* offset scroll position for anchor links (for fixed navbar)  */
+  .section h1 {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  .section h2 {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  .section h3 {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  .section h4 {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  .section h5 {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  .section h6 {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  .dropdown-submenu {
+    position: relative;
+  }
+  .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 0 6px 6px 6px;
+  }
+  .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+  }
+  .dropdown-submenu:hover>a:after {
+    border-left-color: #ffffff;
+  }
+  .dropdown-submenu.pull-left {
+    float: none;
+  }
+  .dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    border-radius: 6px 0 6px 6px;
+  }
+  </style>
+  
+  <script>
+  // manage active state of menu based on current page
+  $(document).ready(function () {
+    // active menu anchor
+    href = window.location.pathname
+    href = href.substr(href.lastIndexOf('/') + 1)
+    if (href === "")
+      href = "index.html";
+    var menuAnchor = $('a[href="' + href + '"]');
+  
+    // mark it active
+    menuAnchor.parent().addClass('active');
+  
+    // if it's got a parent navbar menu mark it active as well
+    menuAnchor.closest('li.dropdown').addClass('active');
   });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>
+  </script>
+  
+  <!-- tabsets -->
+  
+  <style type="text/css">
+  .tabset-dropdown > .nav-tabs {
+    display: inline-table;
+    max-height: 500px;
+    min-height: 44px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .tabset-dropdown > .nav-tabs > li.active:before {
+    content: "";
+    font-family: 'Glyphicons Halflings';
+    display: inline-block;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+    content: "&#xe258;";
+    border: none;
+  }
+  
+  .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+    content: "";
+    font-family: 'Glyphicons Halflings';
+    display: inline-block;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .tabset-dropdown > .nav-tabs > li.active {
+    display: block;
+  }
+  
+  .tabset-dropdown > .nav-tabs > li > a,
+  .tabset-dropdown > .nav-tabs > li > a:focus,
+  .tabset-dropdown > .nav-tabs > li > a:hover {
+    border: none;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  
+  .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+    display: block;
+    float: none;
+  }
+  
+  .tabset-dropdown > .nav-tabs > li {
+    display: none;
+  }
+  </style>
+  
+  <!-- code folding -->
+  
+  
+  
+  
+  <script type="text/javascript" src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+  .MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+  .MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+  .MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+  .MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+  </style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+  #MathJax_About.MathJax_MousePost {outline: none}
+  .MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+  .MathJax_MenuItem {padding: 2px 2em; background: transparent}
+  .MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+  .MathJax_MenuActive .MathJax_MenuArrow {color: white}
+  .MathJax_MenuArrow.RTL {left: .5em; right: auto}
+  .MathJax_MenuCheck {position: absolute; left: .7em}
+  .MathJax_MenuCheck.RTL {right: .7em; left: auto}
+  .MathJax_MenuRadioCheck {position: absolute; left: 1em}
+  .MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+  .MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+  .MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+  .MathJax_MenuDisabled {color: GrayText}
+  .MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+  .MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+  .MathJax_ContextMenu:focus {outline: none}
+  .MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+  #MathJax_AboutClose {top: .2em; right: .2em}
+  .MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+  .MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+  .MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+  .MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+  .MathJax_MenuClose:hover span {background-color: #CCC!important}
+  .MathJax_MenuClose:hover:focus {outline: none}
+  </style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+  </style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+  .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+  </style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+  #MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+  #MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+  #MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+  </style><style type="text/css">.MathJax_Preview {color: #888}
+  #MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+  #MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+  .MathJax_Error {color: #CC0000; font-style: italic}
+  </style><style type="text/css">.MJXp-script {font-size: .8em}
+  .MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+  .MJXp-bold {font-weight: bold}
+  .MJXp-italic {font-style: italic}
+  .MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+  .MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+  .MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+  .MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+  .MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+  .MJXp-largeop {font-size: 150%}
+  .MJXp-largeop.MJXp-int {vertical-align: -.2em}
+  .MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+  .MJXp-display {display: block; text-align: center; margin: 1em 0}
+  .MJXp-math span {display: inline-block}
+  .MJXp-box {display: block!important; text-align: center}
+  .MJXp-box:after {content: " "}
+  .MJXp-rule {display: block!important; margin-top: .1em}
+  .MJXp-char {display: block!important}
+  .MJXp-mo {margin: 0 .15em}
+  .MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+  .MJXp-denom {display: inline-table!important; width: 100%}
+  .MJXp-denom > * {display: table-row!important}
+  .MJXp-surd {vertical-align: top}
+  .MJXp-surd > * {display: block!important}
+  .MJXp-script-box > *  {display: table!important; height: 50%}
+  .MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+  .MJXp-script-box > *:last-child > * {vertical-align: bottom}
+  .MJXp-script-box > * > * > * {display: block!important}
+  .MJXp-mphantom {visibility: hidden}
+  .MJXp-munderover {display: inline-table!important}
+  .MJXp-over {display: inline-block!important; text-align: center}
+  .MJXp-over > * {display: block!important}
+  .MJXp-munderover > * {display: table-row!important}
+  .MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+  .MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+  .MJXp-mtr {display: table-row!important}
+  .MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+  .MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+  .MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+  .MJXp-mlabeledtr {display: table-row!important}
+  .MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+  .MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+  .MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+  .MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+  .MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+  .MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+  .MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+  .MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+  .MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+  .MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+  .MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+  .MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+  .MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+  .MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+  </style></head>
+  
+  <body><div id="MathJax_Message" style="display: none;"></div>
+  
+  
+  <div class="container-fluid main-container">
+  
+  
+  
+  
+  <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><b> EMERGENT</b> </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+    <a href="index.html">
+      <span class="fa fa-home"></span>
+       
+       Home
+    </a>
+  </li>
+  <li class="active">
+    <a href="index.html">
+      <span class="fas fa-pen"></span>
+       
+       Pen
+    </a>
+  </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+  </div><!--/.navbar -->
+  
+  <div class="fluid-row" id="header">
+  
+  
+  
+  <h1 class="title toc-ignore">Authorship</h1>
+  
+  </div>
+  
+  
+  <p>This document is an adaptation of the <a href="https://lter.github.io/som-website/authorship.html">SOM Harmonization working group</a> and <a href="http://www.nutnet.umn.edu/authorship">NutNet</a> policies.</p>
+  <div id="data-are-public-and-harmonizing-them-into-something-meaningful-is-hard" class="section level2">
+  <h2>Data are public, and harmonizing them into something meaningful is hard</h2>
+  <p>Metagenomic data collected as part of NSF funded networks and observatories (e.g.&nbsp;LTER, CZO, and NEON) are intended to be publically available. Much of this legacy data, however, has been collected and archived in ways that preclude meaningful cross site synthesis without further processing. The major objective of this working group, is to collate and harmonize these datasets in a scripted, tractable manner. Many of the raw datasets collected for the database have already been published and archived in GenBank, IMG or other data repositories. In some cases, data from unpublished sources have been included in the database (with permission of the data generators). For both published and unpublished data, personal knowledge about the individual sites and experiments are critical for accurately understanding the data products and linking across datasets. The willingness of many scientists to cooperate and collaborate is what makes this synthesis possible. We have attempted to lay out ground rules to establish a fair process for establishing authorship, and to be inclusive while not diluting the value of authorship on a manuscript.</p>
+  <p>Our primary goals in the authorship process are to consistently, accurately and transparently attribute the contribution of each author on the paper, to encourage participation in manuscripts by interested scientists, and to ensure that each author has made sufficient contribution to the paper to warrant authorship. Towards this end we have developed authorship guidelines for both the initial database paper and subsequent scientific papers that use the database. Please note, physical attendance at any of our meeting is not a requirement.</p>
+  <p>Papers using the EMERGENT database and other resources with put together to address scientific questions should follow the authorship policy. Separate authorship for the methods and database documentation paper are described below.</p>
+  </div>
+  <div id="authorship-process-overview" class="section level2">
+  <h2>Authorship process: Overview</h2>
+  <p><strong>1. Read these authorship policies and guidelines. </strong></p>
+  <p><strong>2. Consult the Emergent web site on for current proposals and active manuscripts,</strong> and contact the listed lead author on any similar proposal to minimize overlap, or to join forces.</p>
+  <p><strong>3. Prepare a manuscript proposal</strong>, and email Jeff Blanchard (jeffb [at] bio.umass.edu). Your proposal will list the lead author(s), the title and abstract body, and the specific data types or fields from the database that you wish to use. You can also specify more detail about response and predictor variables (if appropriate), and indicate a timeline for analysis and writing. Proposed ideas are reviewed by the authorship committee (Stanish, O’Brien, Rodriques, Jansson, McDermott, Blanchard) to ensure there is sufficient distinction from proposed and ongoing papers. The authorship committee may suggest altering or combining analyses and papers to resolve issues of overlap. Following approval, the abstract will be posted to the projects tab of the website to communicate with the larger working group.</p>
+  <p><strong>4. Circulate your draft analysis and manuscript to solicit Opt-In authorship.</strong> The lead author should circulate the manuscript to the working group by attaching it as an email to the synthesis listserv (emergent [at] lternet.edu). The subject line of the email should include the phrase “OPT-IN PAPER.” This email should also include a deadline by which time co-authors should respond. The right point to share your working draft and solicit co-authors is different for each manuscript, but in general: * Sharing early drafts or figures allows for more effective co-author contribution. While ideally this would mean circulating the manuscript at a very early stage for opt-in to the entire network, it is acceptable and even typical to share early drafts or figures among a smaller group of ‘core authors.’ * Circulating essentially complete manuscripts does not allow the opportunity for meaningful contribution from co-authors, and is discouraged.</p>
+  <p><strong>5. Potential co-authors should signal their intention to opt-in </strong> by responding by email to the lead author before the stated deadline.</p>
+  <p><strong>6. Lead authors should keep an email list of co-authors and communicate regularly </strong> about progress including sharing drafts of analyses, figures, and text as often as is productive and practical.</p>
+  <p><strong>7. Lead authors should circulate complete drafts </strong> among co-authors and consider comments and changes. Given the wide variety of ideas and suggestions provided on each paper, co-authors should recognize the final decisions belong to the lead author.</p>
+  <p><strong>8. Final manuscripts should be reviewed and approved by each co-author before submission.</strong></p>
+  <p><strong>9. All authors and co-authors should fill out their contribution in the <a href="#rubric_anchor">authorship rubric</a> </strong> and attach it as supplementary material to manuscripts using the database. Lead authors are responsible for ensuring consistency in credit given for contributions, and may alter co-author’s entries in the table to do so. An easy way to manage the author table is with an online google sheet.</p>
+  <p><strong>10. The lead author should carefully review the authorship contribution table </strong> to ensure that all authors have contributed at a level that warrants authorship and that contributions are consistently attributed among authors. Has each author made contributions in at least two areas in the authorship rubric? Did each author provide thoughtful, detailed feedback on the manuscript? Authors are encouraged to contact the workshop coordinators (Stanish, O’Brien, Rodriques, Jansson, McDermott, Blanchard) about any confusion or conflicts.</p>
+  </div>
+  <div id="authorship-for-papers-using-the-database" class="section level2">
+  <h2>Authorship for papers using the database</h2>
+  <p>Following publication of the database, which we see as a public resource available through EDI and NCEAS, we hope numerous scientific questions can be addressed with this database and encourage the broader community to use this as a resource moving forward. Studies that use multi-site data from the EMERGENT database are really leveraging the synthesis activities of the working group. Towards this end, we’re suggesting an opt-in approach where for the first two years following publication of the database paper.</p>
+  <div id="who-should-opt-in" class="section level3">
+  <h3>Who should opt in?</h3>
+  <p>Authorship must be earned through a <em>substantial contribution.</em> Traditionally, project initiation and framing, data analysis and interpretation, and manuscript preparation are all authorship-worthy contributions, and remain so for manuscripts using our database. However, synthesis collaborators have also agreed that collaborators who lead a site from which data are being used in a paper can also opt-in as co-authors, under the following conditions: (1) the collaborators’ contributed to the generation of L2 data that form the basis for the database and are used in the paper’s analysis; and (2) that this collaborator makes additional contributions to the particular manuscript, including data analysis, writing, or editing.</p>
+  <p>Manuscripts published using this synthesis will be accompanied by a supplemental table indicating authorship contributions. You can create and share a standard authorship table using google docs and the cirteral listed above. For opt-in papers, a co-author is expected to have <strong>at least two</strong> of the following areas checked in the rubric below.</p>
+  </div>
+  <div id="rubric_anchor" class="section level3">
+  <h3>Authorship rubric, for papers using the database</h3>
+  <ul>
+  <li>Developed and framed the research question.<br>
+  </li>
+  <li>Analyzed data or contributed to data analyses.<br>
+  </li>
+  <li>Conducted model simulation or contributed to model simulations.<br>
+  </li>
+  <li>Helped to harmonize and aggregate the raw data to cross-site dataset (Level 1 data).<br>
+  </li>
+  <li>Developed and contributed tools to synthesize and analyze the aggregated (Level 2 data).<br>
+  </li>
+  <li>Wrote the majority of at least one of the sections of the paper.<br>
+  </li>
+  <li>Contributed to writing the paper by providing suggestions, text, citations, copy editing.</li>
+  </ul>
+  </div>
+  <div id="database_anchor" class="section level3">
+  <h3>Authorship rubric for the database paper</h3>
+  <p>Invitations for authorship on the ‘database paper’ that documents the process and product of these efforts, will be extended to anyone who can complete two of the following criteria:</p>
+  <ul>
+  <li>Contributed raw data (Level 0 data).<br>
+  </li>
+  <li>Helped to harmonize and aggregate the raw data to cross-site dataset (Level 1 data).<br>
+  </li>
+  <li>Developed and contributed tools to synthesize and analyze the aggregated (Level 2 data).<br>
+  </li>
+  <li>Wrote the majority of at least one of the sections of the paper.<br>
+  </li>
+  <li>Contributed to writing the paper by providing suggestions, text, citations, copy editing.<br>
+  </li>
+  <li>Site coordinator, responsible for coordinated data collection, QA-QC, and submission of data products used in the database.</li>
+  </ul>
+  </div>
+  </div>
+  
+  
+  
+  
+  </div>
+  
+  <script>
+  
+  // add bootstrap table styles to pandoc tables
+  function bootstrapStylePandocTables() {
+    $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  }
+  $(document).ready(function () {
+    bootstrapStylePandocTables();
+  });
+  
+  
+  </script>
+  
+  <!-- tabsets -->
+  
+  <script>
+  $(document).ready(function () {
+    window.buildTabsets("TOC");
+  });
+  
+  $(document).ready(function () {
+    $('.tabset-dropdown > .nav-tabs > li').click(function () {
+      $(this).parent().toggleClass('nav-tabs-open')
+    });
+  });
+  </script>
+  
+  <!-- code folding -->
+  
+  
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+  
+  
+  </body></html>

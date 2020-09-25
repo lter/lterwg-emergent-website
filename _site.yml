@@ -6,6 +6,7 @@ navbar:
       icon: fa-home
       href: index.html
     - text: " Authorship"
+      icon: fa-pen
       href: authorship.html
       
 output:

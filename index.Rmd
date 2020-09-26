@@ -1,4 +1,3 @@
-=======
 ### Project Summary
 <figure>
 <img src="https://lternet.edu/wp-content/uploads/2020/01/soil_emergent3.png"

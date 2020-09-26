@@ -28,3 +28,7 @@ Steven Allison, Emiley Eloe-Fadrosh, Sarah Evans, Dawson Fairbanks, Rachel Galle
 
 Award Date: January 9, 2020
 Proposed End Date: March 31, 2023
+
+### EMERGENT GitHub Repository
+
+We will be making all code for this project available through the [EMERGENT GitHub Repository](https://github.com/lter/lterwg-emergent)

@@ -1,3 +1,7 @@
+---
+title: "Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT)"
+---
+
 ### Project Summary
 <figure>
 <img src="images/soil_emergent3.png"

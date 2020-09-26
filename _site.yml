@@ -9,11 +9,8 @@ navbar:
     - text: " Authorship"
       icon: fa-pen
       href: authorship.html
-      
 output:
   html_document:
-    includes:
-      after_body: 
     theme: flatly
     include:
       after_body: footer.html

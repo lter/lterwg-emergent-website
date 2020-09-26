@@ -16,4 +16,4 @@ output:
       after_body: 
     theme: flatly
     include:
-      after_body: footer.html
+      after_body: docs/footer.html

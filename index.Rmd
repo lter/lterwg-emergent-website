@@ -14,20 +14,20 @@ Our climate crisis, resulting from changes in interacting climate variables (tem
 ### Principal Investigators
 
 * [Jeff Blanchard](http://www.bio.umass.edu/micro/blanchard/), UMass Amherst/HFR
-* [Janet Jansson](https://www.pnnl.gov/people/janet-jansson), Pacific Northwest National Laboratory
+* [Janet Jansson](https://www.pnnl.gov/people/janet-jansson), Pacific Northwest National Laboratory (retired)
 * [Jorge Rodrigues](http://lawr.ucdavis.edu/people/faculty/rodrigues-jorge), UC Davis
-* [Lee Stanish](https://www.neonscience.org/observatory/staff/lee-stanish), NEON
+* [Lee Stanish](https://www.usgs.gov/staff-profiles/lee-stanish), US Geological Survey, US Department of Interior
 * [Margaret O’Brien](https://msi.ucsb.edu/people/research-scientists/margaret-obrien), UC Santa Barbara
 * [Jason McDermott](https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=7039), Pacific Northwest National Laboratory
 <br>
 
 ### Participants & Collaborators
 
-Steven Allison, Sreejata Bandopadhyay, Emiley Eloe-Fadrosh, Sarah Evans, Dawson Fairbanks, Rachel Gallery, Adina Howe, Heather Kittredge, Linda Kinkel, David Myrold, Jennifer Pett-Ridge, William Rodriguez-Reillo, Tina Takacs-Vesbach, Kate Lajtha, Ashley Shade, Kristen Vanderbilt and Emery Boose
+Elsa Abs, Caitlin Broderick, Pete Churckran, Hugh Cross, Emiley Eloe-Fadrosh, Sarah Evans, Dawson Fairbanks, Rachel Gallery, Adina Howe, Jennifer Jones, Linda Kinkel, William Nelson, Margaret O’Brien, Petar Penev, Jennifer Pett-Ridge, Sydne Record, William Rodriguez-Reillo, Ashley Shade, Tina Takacs-Vesbach, Danaiijah Vilsaint, Ruonan Wu, Kate Lajtha, Kristen Vanderbilt and Emery Boose
 <br>
 
 Award Date: January 9, 2020
-Proposed End Date: March 31, 2023
+Proposed End Date: September 30, 2024
 
 ### EMERGENT GitHub Repository
 

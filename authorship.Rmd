@@ -59,7 +59,7 @@ Manuscripts published using this synthesis will be accompanied by a supplemental
 * Wrote the majority of at least one of the sections of the paper.  
 * Contributed to writing the paper by providing suggestions, text, citations, copy editing.  
 
-### Authorship rubric for the database paper  {#database_anchor}
+### Authorship rubric, for the database paper  {#database_anchor}
 Invitations for authorship on the ‘database paper’ that documents the process and product of these efforts, will be extended to anyone who can complete two of the following criteria:  
 
 * Contributed raw data (Level 0 data).   

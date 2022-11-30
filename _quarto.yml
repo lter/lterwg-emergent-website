@@ -29,7 +29,9 @@ website:
       - text: "Data Sources"
         href: data_sources.qmd
       - text: "Tutorials"
-        href: tutorials.qmd
+        menu:
+           - text: "Working on JupyterHub"
+             href: jupyterhub.qmd
       - text: "Authorship"
         href: authorship.qmd
       - text: "Resources"

@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "jupyterhub.html",
+    "href": "jupyterhub.html",
+    "title": "EMERGENT",
+    "section": "",
+    "text": "Logging in\n\n\nBatch and interactive work\n\n\nBatch\n\nSlurm\n\n\n\nConda and Bioconda\n\n\nRStudio\n\n\nPython Notebooks"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT)",
     "section": "",
     "text": "Project Summary\n\nOur climate crisis, resulting from changes in interacting climate variables (temperature, rainfall, atmospheric chemistry) over the last century, has impacted all ecosystems on the surface of the Earth. The Ecological Metagenome-derived Reference Genomes and Traits (EMERGENT) synthesis project connects genomic information about the soil microbiome with the broader ecological context. Our work will advance efforts to harmonize molecular information for microbial taxa and their functional traits, streamline their use in syntheses with related ecosystem level data, and enable future metagenomic studies to leverage EDI environmental data, spurring future microbial ecology research at LTER sites. \n\n\nPrincipal Investigators\n\nJeff Blanchard, UMass Amherst/HFR\nJanet Jansson, Pacific Northwest National Laboratory (retired)\nJorge Rodrigues, UC Davis\nLee Stanish, US Geological Survey, US Department of Interior\nMargaret O’Brien, UC Santa Barbara\nJason McDermott, Pacific Northwest National Laboratory \n\n\n\nParticipants & Collaborators\nElsa Abs, Caitlin Broderick, Pete Churckran, Hugh Cross, Emiley Eloe-Fadrosh, Sarah Evans, Dawson Fairbanks, Rachel Gallery, Adina Howe, Jennifer Jones, Linda Kinkel, William Nelson, Margaret O’Brien, Petar Penev, Jennifer Pett-Ridge, Sydne Record, William Rodriguez-Reillo, Ashley Shade, Tina Takacs-Vesbach, Danaiijah Vilsaint, Ruonan Wu, Kate Lajtha, Kristen Vanderbilt and Emery Boose\nAward Date: January 9, 2020 Proposed End Date: September 30, 2024\n\n\nEMERGENT GitHub Repository\nWe will be making all code for this project available through the EMERGENT GitHub Repository"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "EMERGENT",
+    "section": "",
+    "text": "ESA\n\n\nLTER\n\n\nNEON/EMSL\n\n\nAGU\n\n\nSURF"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "EMERGENT",
+    "section": "",
+    "text": "JGI\n\n\nNMDC\n\n\nEMSL"
   },
   {
     "objectID": "authorship.html",

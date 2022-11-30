@@ -1,518 +1,523 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
 
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+<title>EMERGENT - Authorship</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
 
 
-<title>Authorship</title>
-
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
   }
-}
-</script>
-
-
-
-
-
-
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
+}</script>
 
 
 </head>
 
-<body>
+<body class="nav-fixed">
 
-
-<div class="container-fluid main-container">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">EMERGENT</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">EMERGENT</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./workflow.html">
+ <span class="menu-text">Workflow</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Products</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-products">    
         <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-     Home
-  </a>
-</li>
-<li>
-  <a href="authorship.html">
-    <span class="fa fa-pen"></span>
-     
-     Authorship
-  </a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div id="header">
-
-
-
-<h1 class="title toc-ignore">Authorship</h1>
-
-</div>
-
-
-<p>This document is an adaptation of the <a
-href="https://lter.github.io/som-website/authorship.html">SOM
-Harmonization working group</a> and <a
-href="http://www.nutnet.umn.edu/authorship">NutNet</a> policies.</p>
-<div
-id="data-are-public-and-harmonizing-them-into-something-meaningful-is-hard"
-class="section level2">
-<h2>Data are public, and harmonizing them into something meaningful is
-hard</h2>
-<p>Metagenomic data collected as part of NSF funded networks and
-observatories (e.g. LTER, CZO, and NEON) are intended to be publically
-available. Much of this legacy data, however, has been collected and
-archived in ways that preclude meaningful cross site synthesis without
-further processing. The major objective of this working group, is to
-collate and harmonize these datasets in a scripted, tractable manner.
-Many of the raw datasets collected for the database have already been
-published and archived in GenBank, IMG or other data repositories. In
-some cases, data from unpublished sources have been included in the
-database (with permission of the data generators). For both published
-and unpublished data, personal knowledge about the individual sites and
-experiments are critical for accurately understanding the data products
-and linking across datasets. The willingness of many scientists to
-cooperate and collaborate is what makes this synthesis possible. We have
-attempted to lay out ground rules to establish a fair process for
-establishing authorship, and to be inclusive while not diluting the
-value of authorship on a manuscript.</p>
-<p>Our primary goals in the authorship process are to consistently,
-accurately and transparently attribute the contribution of each author
-on the paper, to encourage participation in manuscripts by interested
-scientists, and to ensure that each author has made sufficient
-contribution to the paper to warrant authorship. Towards this end we
-have developed authorship guidelines for both the initial database paper
-and subsequent scientific papers that use the database. Please note,
-physical attendance at any of our meeting is not a requirement.</p>
-<p>Papers using the EMERGENT database and other resources with put
-together to address scientific questions should follow the authorship
-policy. Separate authorship for the methods and database documentation
-paper are described below.</p>
-</div>
-<div id="authorship-process-overview" class="section level2">
-<h2>Authorship process: Overview</h2>
-<p><strong>1. Read these authorship policies and
-guidelines.</strong></p>
-<p><strong>2. Consult the Emergent web site on for current proposals and
-active manuscripts,</strong> and contact the listed lead author on any
-similar proposal to minimize overlap, or to join forces.</p>
-<p><strong>3. Prepare a manuscript proposal</strong>, and email Jeff
-Blanchard (jeffb [at] bio.umass.edu). Your proposal will list the lead
-author(s), the title and abstract body, and the specific data types or
-fields from the database that you wish to use. You can also specify more
-detail about response and predictor variables (if appropriate), and
-indicate a timeline for analysis and writing. Proposed ideas are
-reviewed by the authorship committee (Stanish, O’Brien, Rodriques,
-Jansson, McDermott, Blanchard) to ensure there is sufficient distinction
-from proposed and ongoing papers. The authorship committee may suggest
-altering or combining analyses and papers to resolve issues of overlap.
-Following approval, the abstract will be posted to the projects tab of
-the website to communicate with the larger working group.</p>
-<p><strong>4. Circulate your draft analysis and manuscript to solicit
-Opt-In authorship.</strong> The lead author should circulate the
-manuscript to the working group by attaching it as an email to the
-synthesis listserv (emergent [at] lternet.edu). The subject line of the
-email should include the phrase “OPT-IN PAPER.” This email should also
-include a deadline by which time co-authors should respond. The right
-point to share your working draft and solicit co-authors is different
-for each manuscript, but in general: * Sharing early drafts or figures
-allows for more effective co-author contribution. While ideally this
-would mean circulating the manuscript at a very early stage for opt-in
-to the entire network, it is acceptable and even typical to share early
-drafts or figures among a smaller group of ‘core authors.’ * Circulating
-essentially complete manuscripts does not allow the opportunity for
-meaningful contribution from co-authors, and is discouraged.</p>
-<p><strong>5. Potential co-authors should signal their intention to
-opt-in </strong> by responding by email to the lead author before the
-stated deadline.</p>
-<p><strong>6. Lead authors should keep an email list of co-authors and
-communicate regularly </strong> about progress including sharing drafts
-of analyses, figures, and text as often as is productive and
-practical.</p>
-<p><strong>7. Lead authors should circulate complete drafts </strong>
-among co-authors and consider comments and changes. Given the wide
-variety of ideas and suggestions provided on each paper, co-authors
-should recognize the final decisions belong to the lead author.</p>
-<p><strong>8. Final manuscripts should be reviewed and approved by each
-co-author before submission.</strong></p>
-<p><strong>9. All authors and co-authors should fill out their
-contribution in the <a href="#rubric_anchor">authorship rubric</a>
-</strong> and attach it as supplementary material to manuscripts using
-the database. Lead authors are responsible for ensuring consistency in
-credit given for contributions, and may alter co-author’s entries in the
-table to do so. An easy way to manage the author table is with an online
-google sheet.</p>
-<p><strong>10. The lead author should carefully review the authorship
-contribution table </strong> to ensure that all authors have contributed
-at a level that warrants authorship and that contributions are
-consistently attributed among authors. Has each author made
-contributions in at least two areas in the authorship rubric? Did each
-author provide thoughtful, detailed feedback on the manuscript? Authors
-are encouraged to contact the workshop coordinators (Stanish, O’Brien,
-Rodriques, Jansson, McDermott, Blanchard) about any confusion or
-conflicts.</p>
-</div>
-<div id="authorship-for-papers-using-the-database"
-class="section level2">
-<h2>Authorship for papers using the database</h2>
-<p>Following publication of the database, which we see as a public
-resource available through EDI and NCEAS, we hope numerous scientific
-questions can be addressed with this database and encourage the broader
-community to use this as a resource moving forward. Studies that use
-multi-site data from the EMERGENT database are really leveraging the
-synthesis activities of the working group. Towards this end, we’re
-suggesting an opt-in approach where for the first two years following
-publication of the database paper.</p>
-<div id="who-should-opt-in" class="section level3">
-<h3>Who should opt in?</h3>
-<p>Authorship must be earned through a <em>substantial
-contribution.</em> Traditionally, project initiation and framing, data
-analysis and interpretation, and manuscript preparation are all
-authorship-worthy contributions, and remain so for manuscripts using our
-database. However, synthesis collaborators have also agreed that
-collaborators who lead a site from which data are being used in a paper
-can also opt-in as co-authors, under the following conditions: (1) the
-collaborators’ contributed to the generation of L2 data that form the
-basis for the database and are used in the paper’s analysis; and (2)
-that this collaborator makes additional contributions to the particular
-manuscript, including data analysis, writing, or editing.</p>
-<p>Manuscripts published using this synthesis will be accompanied by a
-supplemental table indicating authorship contributions. You can create
-and share a standard authorship table using google docs and the cirteral
-listed above. For opt-in papers, a co-author is expected to have
-<strong>at least two</strong> of the following areas checked in the
-rubric below.</p>
-</div>
-<div id="rubric_anchor" class="section level3">
-<h3>Authorship rubric, for papers using the database</h3>
-<ul>
-<li>Developed and framed the research question.<br />
-</li>
-<li>Analyzed data or contributed to data analyses.<br />
-</li>
-<li>Conducted model simulation or contributed to model
-simulations.<br />
-</li>
-<li>Helped to harmonize and aggregate the raw data to cross-site dataset
-(Level 1 data).<br />
-</li>
-<li>Developed and contributed tools to synthesize and analyze the
-aggregated (Level 2 data).<br />
-</li>
-<li>Wrote the majority of at least one of the sections of the
-paper.<br />
-</li>
-<li>Contributed to writing the paper by providing suggestions, text,
-citations, copy editing.</li>
+    <a class="dropdown-item" href="./presentations.html">
+ <span class="dropdown-text">Presentations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./database.html">
+ <span class="menu-text">Database</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data_sources.html">
+ <span class="menu-text">Data Sources</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="./jupyterhub.html">
+ <span class="dropdown-text">Working on JupyterHub</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./authorship.html" aria-current="page">
+ <span class="menu-text">Authorship</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html">
+ <span class="menu-text">Resources</span></a>
+  </li>  
 </ul>
-</div>
-<div id="database_anchor" class="section level3">
-<h3>Authorship rubric, for the database paper</h3>
-<p>Invitations for authorship on the ‘database paper’ that documents the
-process and product of these efforts, will be extended to anyone who can
-complete two of the following criteria:</p>
-<ul>
-<li>Contributed raw data (Level 0 data).<br />
-</li>
-<li>Helped to harmonize and aggregate the raw data to cross-site dataset
-(Level 1 data).<br />
-</li>
-<li>Developed and contributed tools to synthesize and analyze the
-aggregated (Level 2 data).<br />
-</li>
-<li>Wrote the majority of at least one of the sections of the
-paper.<br />
-</li>
-<li>Contributed to writing the paper by providing suggestions, text,
-citations, copy editing.<br />
-</li>
-<li>Site coordinator, responsible for coordinated data collection,
-QA-QC, and submission of data products used in the database.</li>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lter/lterwg-emergent-website/tree/master"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
 </ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-are-public-and-harmonizing-them-into-something-meaningful-is-hard" id="toc-data-are-public-and-harmonizing-them-into-something-meaningful-is-hard" class="nav-link active" data-scroll-target="#data-are-public-and-harmonizing-them-into-something-meaningful-is-hard">Data are public, and harmonizing them into something meaningful is hard</a></li>
+  <li><a href="#authorship-process-overview" id="toc-authorship-process-overview" class="nav-link" data-scroll-target="#authorship-process-overview">Authorship process: Overview</a></li>
+  <li><a href="#authorship-for-papers-using-the-database" id="toc-authorship-for-papers-using-the-database" class="nav-link" data-scroll-target="#authorship-for-papers-using-the-database">Authorship for papers using the database</a>
+  <ul class="collapse">
+  <li><a href="#who-should-opt-in" id="toc-who-should-opt-in" class="nav-link" data-scroll-target="#who-should-opt-in">Who should opt in?</a></li>
+  <li><a href="#rubric_anchor" id="toc-rubric_anchor" class="nav-link" data-scroll-target="#rubric_anchor">Authorship rubric, for papers using the database</a></li>
+  <li><a href="#database_anchor" id="toc-database_anchor" class="nav-link" data-scroll-target="#database_anchor">Authorship rubric, for the database paper</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Authorship</h1>
 </div>
-</div>
-
-<hr />
-<p>
-  <a  href="https://lternet.edu/"><img  src="images/LTER-logo.png" width="32%" align="left" /></a> 
-  <a  href="https://www.neonscience.org/"><img src="images/neon_banner.png" width="18%" align="right"/></a>
-  <a  href="https://www.nceas.ucsb.edu/"><img src="images/NCEAS_logo" width="18%" align="center"/></a>
-</p>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This document is an adaptation of the <a href="https://lter.github.io/som-website/authorship.html">SOM Harmonization working group</a> and <a href="http://www.nutnet.umn.edu/authorship">NutNet</a> policies.</p>
+<section id="data-are-public-and-harmonizing-them-into-something-meaningful-is-hard" class="level2">
+<h2 class="anchored" data-anchor-id="data-are-public-and-harmonizing-them-into-something-meaningful-is-hard">Data are public, and harmonizing them into something meaningful is hard</h2>
+<p>Metagenomic data collected as part of NSF funded networks and observatories (e.g.&nbsp;LTER, CZO, and NEON) are intended to be publically available. Much of this legacy data, however, has been collected and archived in ways that preclude meaningful cross site synthesis without further processing. The major objective of this working group, is to collate and harmonize these datasets in a scripted, tractable manner. Many of the raw datasets collected for the database have already been published and archived in GenBank, IMG or other data repositories. In some cases, data from unpublished sources have been included in the database (with permission of the data generators). For both published and unpublished data, personal knowledge about the individual sites and experiments are critical for accurately understanding the data products and linking across datasets. The willingness of many scientists to cooperate and collaborate is what makes this synthesis possible. We have attempted to lay out ground rules to establish a fair process for establishing authorship, and to be inclusive while not diluting the value of authorship on a manuscript.</p>
+<p>Our primary goals in the authorship process are to consistently, accurately and transparently attribute the contribution of each author on the paper, to encourage participation in manuscripts by interested scientists, and to ensure that each author has made sufficient contribution to the paper to warrant authorship. Towards this end we have developed authorship guidelines for both the initial database paper and subsequent scientific papers that use the database. Please note, physical attendance at any of our meeting is not a requirement.</p>
+<p>Papers using the EMERGENT database and other resources with put together to address scientific questions should follow the authorship policy. Separate authorship for the methods and database documentation paper are described below.</p>
+</section>
+<section id="authorship-process-overview" class="level2">
+<h2 class="anchored" data-anchor-id="authorship-process-overview">Authorship process: Overview</h2>
+<p><strong>1. Read these authorship policies and guidelines.</strong></p>
+<p><strong>2. Consult the Emergent web site on for current proposals and active manuscripts,</strong> and contact the listed lead author on any similar proposal to minimize overlap, or to join forces.</p>
+<p><strong>3. Prepare a manuscript proposal</strong>, and email Jeff Blanchard (jeffb [at] bio.umass.edu). Your proposal will list the lead author(s), the title and abstract body, and the specific data types or fields from the database that you wish to use. You can also specify more detail about response and predictor variables (if appropriate), and indicate a timeline for analysis and writing. Proposed ideas are reviewed by the authorship committee (Stanish, O’Brien, Rodriques, Jansson, McDermott, Blanchard) to ensure there is sufficient distinction from proposed and ongoing papers. The authorship committee may suggest altering or combining analyses and papers to resolve issues of overlap. Following approval, the abstract will be posted to the projects tab of the website to communicate with the larger working group.</p>
+<p><strong>4. Circulate your draft analysis and manuscript to solicit Opt-In authorship.</strong> The lead author should circulate the manuscript to the working group by attaching it as an email to the synthesis listserv (emergent [at] lternet.edu). The subject line of the email should include the phrase “OPT-IN PAPER.” This email should also include a deadline by which time co-authors should respond. The right point to share your working draft and solicit co-authors is different for each manuscript, but in general: * Sharing early drafts or figures allows for more effective co-author contribution. While ideally this would mean circulating the manuscript at a very early stage for opt-in to the entire network, it is acceptable and even typical to share early drafts or figures among a smaller group of ‘core authors.’ * Circulating essentially complete manuscripts does not allow the opportunity for meaningful contribution from co-authors, and is discouraged.</p>
+<p><strong>5. Potential co-authors should signal their intention to opt-in </strong> by responding by email to the lead author before the stated deadline.</p>
+<p><strong>6. Lead authors should keep an email list of co-authors and communicate regularly </strong> about progress including sharing drafts of analyses, figures, and text as often as is productive and practical.</p>
+<p><strong>7. Lead authors should circulate complete drafts </strong> among co-authors and consider comments and changes. Given the wide variety of ideas and suggestions provided on each paper, co-authors should recognize the final decisions belong to the lead author.</p>
+<p><strong>8. Final manuscripts should be reviewed and approved by each co-author before submission.</strong></p>
+<p><strong>9. All authors and co-authors should fill out their contribution in the <a href="#rubric_anchor">authorship rubric</a> </strong> and attach it as supplementary material to manuscripts using the database. Lead authors are responsible for ensuring consistency in credit given for contributions, and may alter co-author’s entries in the table to do so. An easy way to manage the author table is with an online google sheet.</p>
+<p><strong>10. The lead author should carefully review the authorship contribution table </strong> to ensure that all authors have contributed at a level that warrants authorship and that contributions are consistently attributed among authors. Has each author made contributions in at least two areas in the authorship rubric? Did each author provide thoughtful, detailed feedback on the manuscript? Authors are encouraged to contact the workshop coordinators (Stanish, O’Brien, Rodriques, Jansson, McDermott, Blanchard) about any confusion or conflicts.</p>
+</section>
+<section id="authorship-for-papers-using-the-database" class="level2">
+<h2 class="anchored" data-anchor-id="authorship-for-papers-using-the-database">Authorship for papers using the database</h2>
+<p>Following publication of the database, which we see as a public resource available through EDI and NCEAS, we hope numerous scientific questions can be addressed with this database and encourage the broader community to use this as a resource moving forward. Studies that use multi-site data from the EMERGENT database are really leveraging the synthesis activities of the working group. Towards this end, we’re suggesting an opt-in approach where for the first two years following publication of the database paper.</p>
+<section id="who-should-opt-in" class="level3">
+<h3 class="anchored" data-anchor-id="who-should-opt-in">Who should opt in?</h3>
+<p>Authorship must be earned through a <em>substantial contribution.</em> Traditionally, project initiation and framing, data analysis and interpretation, and manuscript preparation are all authorship-worthy contributions, and remain so for manuscripts using our database. However, synthesis collaborators have also agreed that collaborators who lead a site from which data are being used in a paper can also opt-in as co-authors, under the following conditions: (1) the collaborators’ contributed to the generation of L2 data that form the basis for the database and are used in the paper’s analysis; and (2) that this collaborator makes additional contributions to the particular manuscript, including data analysis, writing, or editing.</p>
+<p>Manuscripts published using this synthesis will be accompanied by a supplemental table indicating authorship contributions. You can create and share a standard authorship table using google docs and the cirteral listed above. For opt-in papers, a co-author is expected to have <strong>at least two</strong> of the following areas checked in the rubric below.</p>
+</section>
+<section id="rubric_anchor" class="level3">
+<h3 class="anchored" data-anchor-id="rubric_anchor">Authorship rubric, for papers using the database</h3>
+<ul>
+<li>Developed and framed the research question.<br>
+</li>
+<li>Analyzed data or contributed to data analyses.<br>
+</li>
+<li>Conducted model simulation or contributed to model simulations.<br>
+</li>
+<li>Helped to harmonize and aggregate the raw data to cross-site dataset (Level 1 data).<br>
+</li>
+<li>Developed and contributed tools to synthesize and analyze the aggregated (Level 2 data).<br>
+</li>
+<li>Wrote the majority of at least one of the sections of the paper.<br>
+</li>
+<li>Contributed to writing the paper by providing suggestions, text, citations, copy editing.</li>
+</ul>
+</section>
+<section id="database_anchor" class="level3">
+<h3 class="anchored" data-anchor-id="database_anchor">Authorship rubric, for the database paper</h3>
+<p>Invitations for authorship on the ‘database paper’ that documents the process and product of these efforts, will be extended to anyone who can complete two of the following criteria:</p>
+<ul>
+<li>Contributed raw data (Level 0 data).<br>
+</li>
+<li>Helped to harmonize and aggregate the raw data to cross-site dataset (Level 1 data).<br>
+</li>
+<li>Developed and contributed tools to synthesize and analyze the aggregated (Level 2 data).<br>
+</li>
+<li>Wrote the majority of at least one of the sections of the paper.<br>
+</li>
+<li>Contributed to writing the paper by providing suggestions, text, citations, copy editing.<br>
+</li>
+<li>Site coordinator, responsible for coordinated data collection, QA-QC, and submission of data products used in the database.</li>
+</ul>
 
 
+</section>
+</section>
 
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
+<p><a href="https://www.nceas.ucsb.edu/"><img src="images/nceas_logo_wide.png" align="left" width="35%"></a> <a href="https://lternet.edu/"><img src="images/LTER-network-horizontal-sm.png" align="center" width="35%"></a> <a href="https://www.neonscience.org/"><img src="images/neon_banner.png" align="right" width="25%"></a></p></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
   });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
+</div> <!-- /content -->
 
-<!-- code folding -->
 
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>
+</body></html>

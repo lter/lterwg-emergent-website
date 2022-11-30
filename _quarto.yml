@@ -1,0 +1,53 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: docs
+
+website:
+  title: "EMERGENT"
+  body-footer: |
+    <a  href="https://www.nceas.ucsb.edu/"><img src="images/nceas_logo_wide.png" align="left" width="35%"/></a>
+    <a  href="https://lternet.edu/"><img src="images/LTER-network-horizontal-sm.png" align="center" width="35%"/></a>
+    <a  href="https://www.neonscience.org/"><img src="images/neon_banner.png" align="right" width="25%"/></a>
+
+
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Workflow"
+        href: workflow.qmd
+      - text: "Products"
+        menu: 
+          - text: "Presentations"
+            href: presentations.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "Database"
+        href: database.qmd
+      - text: "Data Sources"
+        href: data_sources.qmd
+      - text: "Tutorials"
+        href: tutorials.qmd
+      - text: "Authorship"
+        href: authorship.qmd
+      - text: "Resources"
+        href: resources.qmd
+    right:
+      - icon: github
+        href: https://github.com/lter/lterwg-emergent-website/tree/master
+
+
+format:
+  html:
+    theme:
+       light: flatly
+       dark: darkly
+    toc: true
+    link-external-newwindow: true
+    link-external-icon: false
+
+
+
+

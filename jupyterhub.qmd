@@ -1,0 +1,13 @@
+### Logging in
+
+### Batch and interactive work
+
+### Batch
+
+#### Slurm
+
+### Conda and Bioconda
+
+### RStudio
+
+### Python Notebooks

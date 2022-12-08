@@ -1,0 +1,19 @@
+### JGI
+
+<a  href="https://jgi.doe.gov/"><img src="images/jgi.png" align="center" width="70%"/></a>
+
+The mission of the U.S. Department of Energy (DOE) Joint Genome Institute (JGI), a DOE Office of Science User Facility at Lawrence Berkeley National Laboratory (Berkeley Lab) and part of the Biosciences Area, is to advance genomics in support of the DOE missions related to clean energy generation and environmental characterization and cleanup. Supported by the DOE Office of Science, the JGI unites the expertise at Berkeley Lab, Lawrence Livermore National Laboratory, and the HudsonAlpha Institute for Biotechnology. Located in the Integrative Genomics Building in the heart of the Berkeley Lab campus, atop the hills above Berkeley, California, the JGI is operated by the University of California for the U.S. Department of Energy. The JGI provides integrated high-throughput sequencing, DNA design and synthesis, metabolomics and computational analysis that enable systems-based scientific approaches to these challenges.
+
+
+### NMDC
+
+<a  href="https://microbiomedata.org/"><img src="images/nmdc.png" align="center" width="60%"/></a>
+
+The long-term vision of the NMDC is to support microbiome data exploration through a sustainable data discovery platform that promotes open science and shared-ownership across a broad and diverse community of researchers, funders, publishers, societies, and other Collaborators. To support this shared long-term scientific vision of microbiome science, the NMDC mission is to work with the community to iteratively develop and pilot an integrated, open source microbiome science gateway that leverages existing resources and enables comprehensive access to multidisciplinary microbiome data and standardized, reproducible data products. 
+
+
+### EMSL
+
+<a  href="https://www.emsl.pnnl.gov/"><img src="images/emsl.png" align="center" width="60%"/></a>
+
+The Environmental Molecular Sciences Laboratory (EMSL) is a Department of Energy, Office of Science, User Facility sponsored by the Biological and Environmental Research (BER) program. At EMSL, our scientists focus on fundamental biological and environmental research. We collaborate on projects with researchers from academia, other government laboratories, and industry. Scientists around the world can partner with us to use our world-class laboratory space, expertise, and equipment—for free—if their research proposal is accepted through our peer-review process.

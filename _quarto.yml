@@ -10,7 +10,6 @@ website:
     <a  href="https://lternet.edu/"><img src="images/LTER-network-horizontal-sm.png" align="center" width="35%"/></a>
     <a  href="https://www.neonscience.org/"><img src="images/neon_banner.png" align="right" width="25%"/></a>
 
-
   navbar:
     background: primary
     left:
@@ -22,7 +21,6 @@ website:
             href: presentations.qmd
       - text: "Projects"
         href: projects.qmd
-      - text: "Database"
       - text: "Authorship"
         href: authorship.qmd
       - text: "Resources"
@@ -30,7 +28,6 @@ website:
     right:
       - icon: github
         href: https://github.com/lter/lterwg-emergent-website/tree/master
-
 
 format:
   html:

@@ -16,8 +16,6 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Workflow"
-        href: workflow.qmd
       - text: "Products"
         menu: 
           - text: "Presentations"
@@ -25,13 +23,6 @@ website:
       - text: "Projects"
         href: projects.qmd
       - text: "Database"
-        href: database.qmd
-      - text: "Data Sources"
-        href: data_sources.qmd
-      - text: "Tutorials"
-        menu:
-           - text: "Working on JupyterHub"
-             href: jupyterhub.qmd
       - text: "Authorship"
         href: authorship.qmd
       - text: "Resources"
